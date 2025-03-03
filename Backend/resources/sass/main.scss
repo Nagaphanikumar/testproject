@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.folder-icon {
+    cursor: pointer;
+}
+
+.folder-icon::before {
+    
+    margin-right: 0.5rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.folder-icon.expanded::before {
+    transform: rotate(90deg);
+}
+
+/* .submenu {
+    display: none;
+}
+
+.submenu.active {
+    display: block;
+} */
+
+.expandable-content{
+    display:none;
+}
+/* Style the button to open the modal */
+.modal-button {
+font-size: 1.5rem;
+padding: 10px 20px;
+background-color: gray;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+/* Style the modal container */
+.modal-container {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+justify-content: center;
+align-items: center;
+z-index: 1;
+}
+
+/* Style the modal content */
+.modal-content {
+background-color: white;
+padding: 20px;
+border-radius: 5px;
+max-width: 33%;
+}
+
+/* Style the close button */
+.close-button {
+position: absolute;
+top: 10px;
+right: 10px;
+cursor: pointer;
+}
+
+/* Remove default bullets */
+ul, #myUL {
+list-style-type: none;
+}
+
+/* Remove margins and padding from the parent ul */
+#myUL {
+margin: 0;
+padding: 0;
+}
+
+/* Style the caret/arrow */
+.caret {
+cursor: pointer;
+user-select: none; /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+content: "\25B6";
+color: black;
+display: inline-block;
+margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+transform: rotate(90deg);
+}
+
+/* Hide the nested list */
+.nested {
+display: none;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+display: block;
+}
+/* Style the caret/arrow */
+.caret1 {
+    cursor: pointer;
+    user-select: none; /* Prevent text selection */
+    }
+    
+    /* Create the caret/arrow with a unicode, and style it */
+    .caret1::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+    }
+    
+    .career{
+        margin-right: 50px;
+        -webkit-text-fill-color: rgb(0, 0, 0);
+    }
+
+    .contact{
+        -webkit-text-fill-color:  rgb(0, 0, 0);
+    }
+
+    .home{
+        margin-right: 50px;
+        -webkit-text-fill-color:  rgb(0, 0, 0);
+    }
+    /* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+    /* .caret-down::before {
+    transform: rotate(90deg);
+    } */
